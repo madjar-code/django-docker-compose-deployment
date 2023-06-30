@@ -11,3 +11,10 @@ services:
     environment:
       - SECRET_KEY=zsfq@q18aq#o%8)e^qj1#!+2^x
       - DEBUG=1
+
+  db:
+    image: posgtres:13-alpine
+    environment:
+      - POSTGRES_DB=devdb
+      - POSTGRES_USER=devuser
+      - POSTGRES_PASSWORD=changeme
