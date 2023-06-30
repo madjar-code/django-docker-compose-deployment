@@ -19,7 +19,7 @@ services:
       - db
 
   db:
-    image: posgtres:13-alpine
+    image: postgres:13-alpine
     environment:
       - POSTGRES_DB=devdb
       - POSTGRES_USER=devuser
