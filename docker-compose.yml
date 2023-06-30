@@ -11,6 +11,12 @@ services:
     environment:
       - SECRET_KEY=zsfq@q18aq#o%8)e^qj1#!+2^x
       - DEBUG=1
+      - DB_HOST=db
+      - DB_NAME=devdb
+      - DB_USER=devuser
+      - DB_PASS=changeme
+    depends_on:
+      - db
 
   db:
     image: posgtres:13-alpine
